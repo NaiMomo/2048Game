@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+{% block title %} User List {% endblock %}
+{% block nav %}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+    </li>
+{% endblock %}
+{% block scripts %}
+<script>
+    setInterval(tdScore, 100);
+    setInterval(queryOnlineUsers, 500);
+    setInterval(queryAllDb, 500);
+
+</script>
+{% endblock %}
+{% block content %}
+
+    <div id="adminView">
+    <div id="panneau_admin">
+        <div>
+            <div>Users/ Admins Online</div>
+            <div id="currentOnline">-</div>
+        </div>
+        <div>
+            <h1>&nbsp;</h1>
+        </div>
+        <div>
+            <div>Users/ Admins on database</div>
+            <div id="totalUsers">-</div>
+        </div>
+    </div>
+
+    <div id="admin_options">
+        <section>
+            <a onclick="yourBest()" class="btn-log"  href = {{url_for('game')}}>Play 2048</a>
+            <a class="btn-log "  href = {{url_for('add_admin')}} >Make New Admin Account</a>
+            <form method="POST" action = {{url_for('admin_view')}}>
+                <label for="description">Order by</label>
+                <select id="orderBy" name="orderBy">
+                    <option disabled selected="true">Choose an option </option>
+                    <option value="score" >Score</option>
+                    <option value="inscription" >Registration</option>
+                </select>
+                <button type="submit" class="orderButton">Order</button>
+            </form>
+        </section>
+
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nickname</th>
+            <th>Password</th>
+            <th>Score</th>
+            <th>Role</th>
+            <th>Member since</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+
+        <tr>
+            <td>{{user['id']}}</td>
+            <td>{{user['nickname']}}</td>
+            <td>{{user['passwd']}}</td>
+            <td class="td_score">{{user['score']}}</td>
+            <td>{{user['role']}}</td>
+            <td>{{user['created']}}</td>
+        </tr>
+    {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+{%  endblock %}

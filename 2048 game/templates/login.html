@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block title %} Log In {% endblock %}
+{% block nav %}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{url_for('signup')}}">Sign Up</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <div id="logIn">
+        <h1>Log In!</h1>
+        <form method="post">
+        <fieldset>
+
+            <label for="nickname">Nickname</label>
+            <input type="text" name="nickname"
+                   placeholder="Enter your username" class="form-control"
+                   value="{{ request.form['nickname'] }}">
+        </fieldset>
+
+        <fielset >
+            <label for="password">Password</label>
+            <input name="password" placeholder="Enter your password" type="password"
+                      class="form-control"{{ request.form['password'] }}>
+            <div>
+            <button type="submit" class="btn-log" {{ request.form['login'] }}>Log In</button>
+        </div>
+        </fielset>
+
+        </form>
+    </div>
+{% endblock %}

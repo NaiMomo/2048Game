@@ -1,0 +1,221 @@
+@import url(clearSans.css);
+body{
+    background-color: #FAF8EF;
+
+}
+.nav-link{
+    color: #FFFFFF;
+    font-weight: bolder;
+    padding: 1em;
+}
+a.navbar-brand{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bolder;
+}
+a.nav-link:hover{
+    background-color: #FAF8EF;
+    color: #8f7a66;
+}
+nav.navbar{
+    padding:1px;
+}
+#adminView{
+    font-family: 'Clear Sans', arial, sans-serif;
+}
+#adminView table th{
+    background-color:#F9F6F2;
+    color: #776E65;
+}
+#adminView table{
+    margin: auto;
+    width: 97%;
+}
+#adminView a.btn-log{
+    margin: 0 2em 1em;
+    padding-top: .5em;
+
+}
+#adminView a.btn-log:nth-child(odd){
+    float: right;
+}
+#adminView a.btn-log:nth-child(even){
+    float: left;
+}
+#adminView a.btn-log:last-child{
+    float: left;
+}
+#adminView button.btn-log a,
+#adminView button.btn-log a:visited
+{
+    color: #FAF8EF;
+    text-decoration: none;
+    padding-bottom: 0;
+}
+#panneau_admin div:first-child{
+
+}
+
+#adminView section a:nth-child(2){
+    font-size: smaller!important;
+    margin-left: 2.7em;
+}
+#adminView a.btn-log:hover, button.orderButton:hover
+{
+    background-color:#BBADA0 ;
+    color:#776E65;
+    text-decoration: none;
+}
+#adminView table tbody tr:nth-child(odd){
+    background-color:#F9F6F2;
+    color: #776E65;
+}
+#adminView table tbody tr:nth-child(even), #adminView table thead th{
+    background-color:#BBADA0;
+    color: #F9F6F2;
+}
+#adminView table thead th{
+    background-color:#776E65;
+    color: #F9F6F2;
+     border: 1px solid #CDC1B4;
+}
+#adminView table tbody td{
+    border: 1px solid #776E65;
+}
+#adminView table thead th{
+    border-bottom: 0;
+}
+#adminView h1, #signUp h1, #logIn h1{
+    font-weight: bold;
+    text-align: center;
+    color: #776E65;
+    font-family: 'Clear Sans', arial, sans-serif;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+fieldset{
+    font-family: 'Clear Sans', arial, sans-serif;
+}
+.btn-log{
+    background: #8f7a66;
+    border-radius: 3px;
+
+    text-decoration: none;
+    color: #F9F6F2;
+    height: 45px;
+    border:none;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    font-family: 'Clear Sans', arial, serif;
+}
+.orderButton{
+    background: #8f7a66;
+    color: #F9F6F2;
+    font-family: 'Clear Sans', arial, serif;
+    border:none;
+    font-weight: bolder;
+    padding: .3em;
+}
+nav{
+    margin-bottom: 1em;
+    background-color: #8F7A66;
+    font-family: 'Clear Sans', arial, sans-serif;
+}
+button.navbar-toggler {
+    color: #FFFFFF;
+}
+
+input.form-control{
+    width: 300px;
+    margin: auto auto 1em;
+
+}
+
+form{
+    font-weight: bold;
+    text-align: center;
+}
+nav div ul{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+label{
+    font-size: large;
+    margin-left: -11.7em;
+    color: #776E65;
+    font-weight: bolder;
+}
+div.form-group{
+    margin-bottom: 1.5em;
+}
+div.form-group:first-child{
+    margin-top: 2em;
+}
+
+#adminView form label{
+    padding: 1em 1em 1em;
+    margin:0em .5em 0em ;
+}
+#admin_options select{
+    margin-right: 1em;
+}
+#admin_options{
+    margin-bottom:2em;
+}
+/*#panneau_admin{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}*/
+#panneau_admin>div:first-child, #panneau_admin>div:last-child{
+    background-color: #BBADA0;
+    color: #FFFFFF;
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    z-index: auto;
+
+}
+
+#panneau_admin>div:first-child{
+    margin-left: 2.3em;
+    float: left;
+}
+#panneau_admin>div:last-child{
+    margin-top: -5.5em;
+    margin-right: 2.3em;
+    margin-left: 1em;
+    float: right;
+
+
+}
+
+footer{
+    border-top : 1px solid #8f7a66;
+    padding-top: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+    color: saddlebrown;
+    font-size: smaller;
+    font-family: 'Clear Sans', arial, sans-serif;
+
+}
+footer a, footer a:active, footer a:hover{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+div#logIn, div#signUp, div#adminView{
+    margin-bottom: 15em;
+}
+div#adminView{
+    margin-bottom: 10em;
+}
+div#tableau{
+    margin-bottom: 5em;
+}

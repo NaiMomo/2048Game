@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% block title %} 2048 {% endblock %}
+{% block scripts %}
+
+    <script src="../static/js/scripts/react.development.js"></script>
+    <script src="../static/js/scripts/react-dom.development.js"></script>
+
+    <script src="../static/js/scripts/babel.min.js"></script>
+    <script type="text/babel" src="../static/js/components/Board.js"></script>
+    <script type="text/babel" src="../static/js/components/Game.js"></script>
+    <script type="text/babel" src="../static/js/components/Info.js"></script>
+    <script src="../static/js/components/Ops.js"></script>
+    <script type="text/jsx" src="../static/js/components/Display.js"></script>
+    <link rel="stylesheet" href="../static/css/game.css"/>
+
+{% endblock %}
+{% block nav %}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+    </li>
+{% endblock %}
+{% block content %}
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        setInterval(queryScores,500);
+        setInterval(yourBest,500);
+          ReactDOM.render(
+            <Game/>,
+            document.getElementById('root')
+          );
+
+    </script>
+
+
+{% endblock %}

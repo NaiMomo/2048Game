@@ -1,0 +1,137 @@
+@import url(clearSans.css);
+#tableau{
+    /* display: flex;
+    flex-wrap: wrap-reverse; */
+    display: flex;
+    flex-direction: column;
+    font-size:large;
+
+
+}
+
+.row{
+
+    font-size: xxx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
+div.row span{
+    text-align: center!important;
+}
+span{
+    width: 100px;
+    height: 100px;
+
+}
+html{
+    min-width: 700px;
+}
+
+.flex_display section, .flex_display aside{
+    background-color:#BBADA0;
+    color:#EEE4DA;
+    width:111px;
+    height: 55px;
+    padding-top:5px;
+    text-align: center;
+    font-weight: bolder;
+
+    margin-left: 5px;
+    margin-right: 1px;
+
+
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+aside h4 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.flex_display aside div:last-child, .flex_display section div:last-child, aside div span, aside div a:hover, aside div a:visited, aside div a:active {
+
+    color:#FFFFFF;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+.flex_display {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex_principal{
+
+    margin-top: 1em;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
+.flex_display_secondaire{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.flex_display_secondaire button{
+    margin-left: -1em;
+}
+.flex_display_secondaire aside h6 {
+    margin-left: 14em;
+    font-weight: bolder;
+
+}
+
+section h1{
+    font-size: 80px;
+
+    text-align:left;
+    margin-right:1.5em;
+    margin-top: 0;
+    margin-bottom:0;
+
+    font-weight: bold;
+}
+
+
+
+#invisible{
+    text-align:center;
+    font-size: x-large;
+}
+
+
+table{
+
+    font-weight: bold;
+    color: #776E65;
+    margin: 2em auto auto;
+    border-collapse: collapse;
+
+}
+td{
+
+    background-color:#EEE4DA;
+    width: 100px;
+    height: 100px;
+
+    border: 7px solid #BBADA0;
+}
+
+
+body{
+    color:#776E65;
+    font-family: 'Clear Sans', arial, serif;
+    background-color: #FAF8EF;
+}
+
+td.zero{
+    background-color:#CDC1B4;
+}
